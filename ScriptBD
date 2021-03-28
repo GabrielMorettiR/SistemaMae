@@ -1,0 +1,33 @@
+/*Script do Banco de dados*/
+
+create table produto(
+id int primary key generated always as identity,
+nome varchar(500),
+quantidade int,
+custo double,
+revenda double
+);
+
+create table categoria(
+id int primary key generated always as identity,
+titulo varchar(100),
+);
+
+create table colaborador(
+id int primary key generated always as identity,
+nome varchar(200),
+divida double
+);
+
+create table venda(
+id int primary key generated always as identity,
+idcolab int,
+idproduto int,
+datavenda date
+);
+
+create table estoque(
+id int primary key generated always as identity,
+idcolab int,
+idproduto int
+);
