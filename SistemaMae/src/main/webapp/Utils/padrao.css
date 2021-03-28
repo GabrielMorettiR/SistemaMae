@@ -1,0 +1,74 @@
+.sideMenu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    transition: 0.2s;
+}
+.toggleMenu{
+    text-decoration: none;
+    color: #bbb;
+    font-size: 18px;
+    transition:0.1s;
+}
+.toggleMenu:hover {
+    color:#999;
+}
+.menuLink {
+    padding: 5px 5px 5px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    background-color: #555;
+    display: block;
+    transition: 0.2s;
+    margin-bottom: 5px;
+}
+
+.menuLink:hover {
+    color: #bbb;
+    font-size: 20px;
+}
+body{
+    transition: 0.2s;
+}
+.row{
+    padding: 0 80px 0 80px;
+}
+.titulo{
+    font-family: 'Jost', sans-serif;
+}
+.inputTitle{
+    margin: 10px 5px 5px 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.submit{
+    border: 1px solid #00cc33;
+    width: 100px;
+    background-color: #ccffcc;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+}
+.submit:hover{
+    background-color: #00cc33;
+    color: white;
+}
+select{
+    width: 180px;
+    padding: 2px 0 2px 0;
+}
+.tableList{
+    border: 1px solid #555;
+}
+.tableList th{
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+}
+.tableListBody tr:nth-child(odd){
+    background-color: #eee;
+}
