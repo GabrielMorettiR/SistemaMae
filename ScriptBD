@@ -1,0 +1,9 @@
+/*Script do Banco de dados*/
+
+create table produto(
+id int primary key generated always as identity,
+nome varchar(500),
+quantidade int,
+custo double,
+revenda double
+);
