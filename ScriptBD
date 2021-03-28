@@ -12,3 +12,22 @@ create table categoria(
 id int primary key generated always as identity,
 titulo varchar(100),
 );
+
+create table colaborador(
+id int primary key generated always as identity,
+nome varchar(200),
+divida double
+);
+
+create table venda(
+id int primary key generated always as identity,
+idcolab int,
+idproduto int,
+datavenda date
+);
+
+create table estoque(
+id int primary key generated always as identity,
+idcolab int,
+idproduto int
+);
